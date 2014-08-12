@@ -1,0 +1,34 @@
+bootloader_k20:
+    name:
+        - k20d50m_blinky
+    mcu:
+        - k20dx128
+    common:
+        include_paths:
+            - examples/blinky
+        source_paths:
+            - examples/blinky
+        source_files:
+            - examples/blinky/main.cpp
+        macros:
+            - TARGET_K20D50M
+            - TARGET_M4
+            - TARGET_Freescale
+            - TOOLCHAIN_ARM_STD
+            - TOOLCHAIN_ARM
+            - __CORTEX_M4
+            - ARM_MATH_CM4
+            - MBED_BUILD_TIMESTAMP=1407859881.52
+            - __MBED__=1
+            - __ASSERT_MSG
+    tool_specific:
+        uvision:
+            misc:
+                c_settings:
+                    # - one_elf_per_function
+                    - O1
+                    - c99
+                c_command_line:
+                    - --debug
+                    - -g
+                    - --gnu

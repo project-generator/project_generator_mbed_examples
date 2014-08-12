@@ -1,0 +1,25 @@
+k20_cmsis:
+    common:
+        group_name:
+            k20_cmsis
+        include_paths:
+            - mbed/targets/cmsis
+            - mbed/targets/cmsis/TARGET_FREESCALE/TARGET_K20D50M
+        source_paths:
+            - mbed/targets/cmsis
+            - mbed/targets/cmsis/TARGET_FREESCALE/TARGET_K20D50M
+        source_files:
+                - mbed/targets/cmsis/TARGET_FREESCALE/TARGET_K20D50M/cmsis_nvic.c
+                - mbed/targets/cmsis/TARGET_FREESCALE/TARGET_K20D50M/system_MK20D5.c
+    tool_specific:
+        uvision:
+            include_paths:
+                - mbed/targets/cmsis/TARGET_FREESCALE/TARGET_K20D50M/TOOLCHAIN_ARM_STD
+            source_paths:
+                - mbed/targets/cmsis/TARGET_FREESCALE/TARGET_K20D50M/TOOLCHAIN_ARM_STD
+            source_files:
+                - mbed/targets/cmsis/TARGET_FREESCALE/TARGET_K20D50M/TOOLCHAIN_ARM_STD/startup_MK20D5.s
+                - mbed/targets/cmsis/TARGET_FREESCALE/TARGET_K20D50M/TOOLCHAIN_ARM_STD/sys.cpp
+            linker_file:
+                - mbed/targets/cmsis/TARGET_FREESCALE/TARGET_K20D50M/TOOLCHAIN_ARM_STD/MK20D5.sct
+

@@ -1,0 +1,7 @@
+# all paths relative to project root dir
+projects:
+    k20_blinky:
+        - tools/records/mbed/common.yaml
+        - tools/records/mbed/k20_cmsis.yaml
+        - tools/records/mbed/k20_target.yaml
+        - tools/records/projects/k20_blinky.yaml
