@@ -26,7 +26,7 @@ Status
 ------------
 
 Target - K20D50M
-Toolchain - uVision
+Toolchain - uVision, GCC ARM
 Examples - blinky demo
 
 Further information
