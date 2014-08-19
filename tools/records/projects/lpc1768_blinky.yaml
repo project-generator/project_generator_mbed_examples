@@ -1,8 +1,8 @@
-k20d50m_blinky:
+lpc1768_blinky:
     name:
-        - k20d50m_blinky
+        - lpc1768_blinky
     mcu:
-        - k20dx128
+        - lpc1768
     core:
         - cortex-m4
     common:
@@ -13,11 +13,10 @@ k20d50m_blinky:
         source_files:
             - examples/blinky/main.cpp
         macros:
-            - TARGET_K20D50M
-            - TARGET_M4
-            - TARGET_Freescale
-            - __CORTEX_M4
-            - ARM_MATH_CM4
+            - TARGET_LPC1768
+            - TARGET_M3
+            - TARGET_NXP
+            - __CORTEX_M3
             - __MBED__=1
     tool_specific:
         uvision:
@@ -56,3 +55,6 @@ k20d50m_blinky:
                     - fno-delete-null-pointer-checks
                     - fmessage-length=0
                     - fno-builtin
+        iar:
+            macros:
+                - TOOLCHAIN_IAR

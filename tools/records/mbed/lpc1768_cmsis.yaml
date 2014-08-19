@@ -1,0 +1,38 @@
+lpc1768_cmsis:
+    common:
+        group_name:
+            lpc1768_cmsis
+        include_paths:
+            - mbed/targets/cmsis
+            - mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X
+        source_paths:
+            - mbed/targets/cmsis
+            - mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X
+        source_files:
+                - mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/cmsis_nvic.c
+                - mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/system_LPC17xx.c
+    tool_specific:
+        uvision:
+            include_paths:
+                - mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_ARM_STD
+            source_paths:
+                - mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_ARM_STD
+            source_files:
+                - mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_ARM_STD/startup_LPC17xx.s
+                - mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_ARM_STD/sys.cpp
+            linker_file:
+                - mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_ARM_STD/LPC1768.sct
+        gcc_arm:
+            source_paths:
+                - mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_ARM
+            source_files:
+                - mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_ARM/startup_LPC17xx.s
+            linker_file:
+                - mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_ARM/LPC1768.ld
+        iar:
+            source_paths:
+                - mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_IAR
+            source_files:
+                - mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_IAR/startup_LPC17xx.s
+            linker_file:
+                - mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_IAR/LPC17xx.icf
