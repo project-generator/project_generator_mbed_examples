@@ -1,12 +1,13 @@
-Project generator - mbed example
+Project generator - mbed src with project generator
 =========================
 
-This example repository shows how to use project generator to generate projects. Look at records, how records are defined. I would like to expand this for more targets, toolchains and features.
+This example repository shows how to use project generator to generate projects. mbed SDK is used as an example.
+Look at records, how records are defined. I would like to expand this to more targets, toolchains and features.
 
 How to use it
 ------------
 
-To generate a project, run export.py script, from tools directory. As shown below:
+To generate a project, run export.py script, from tools directory. As shown below (uvision is default toolchain, can be selected using -t option):
 
 <pre>
 project_generator_mbed_examples\tools>python project_generator/export.py -f records/projects.yaml -p k20_blinky
@@ -25,14 +26,14 @@ DEBUG:root:Generating: uvision_project_files\k20d50m_blinky\k20d50m_blinky.uvopt
 Status
 ------------
 
-Target - K20D50M
-Toolchain - uVision, GCC ARM
+Target - K20D50M, LPC1768
+Toolchain - uVision, GCC ARM, IAR
 Examples - blinky demo
 
 Further information
 -------------------------
 * [Project generator github repository](https://github.com/0xc0170/project_generator)
 
-If you have a question, contact me through mbed or just create an issue, or find my contact email from git log :)
+If you have a question, create an issue, or find my contact email from git log :)
 
 EnjoY!
