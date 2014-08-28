@@ -1,10 +1,8 @@
 lpc1768_blinky:
     name:
         - lpc1768_blinky
-    mcu:
-        - lpc1768
     core:
-        - cortex-m4
+        - cortex-m3
     common:
         include_paths:
             - examples/blinky
@@ -20,20 +18,25 @@ lpc1768_blinky:
             - __MBED__=1
     tool_specific:
         uvision:
+            mcu:
+                - LPC1768
             macros:
                 - TOOLCHAIN_ARM_STD
                 - __ASSERT_MSG
                 - TOOLCHAIN_ARM
             misc:
-                c_settings:
-                    # - one_elf_per_function
-                    - O1
-                    - c99
-                c_command_line:
-                    - --debug
-                    - -g
-                    - --gnu
+                Cads:
+                    MiscControls:
+                        - --debug
+                        - -g
+                        - --gnu
+                    Optim:
+                        - 1
+                    uC99:
+                        - enable
         gcc_arm:
+            mcu:
+                - LPC1768
             macros:
                 - TOOLCHAIN_ARM_GCC
             misc:

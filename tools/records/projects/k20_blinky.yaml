@@ -1,8 +1,6 @@
 k20d50m_blinky:
     name:
         - k20d50m_blinky
-    mcu:
-        - k20dx128
     core:
         - cortex-m4
     common:
@@ -21,20 +19,49 @@ k20d50m_blinky:
             - __MBED__=1
     tool_specific:
         uvision:
+            mcu:
+                - MK20DX128xxx5
             macros:
                 - TOOLCHAIN_ARM_STD
                 - __ASSERT_MSG
                 - TOOLCHAIN_ARM
             misc:
-                c_settings:
-                    # - one_elf_per_function
-                    - O1
-                    - c99
-                c_command_line:
-                    - --debug
-                    - -g
-                    - --gnu
+                Cads:
+                    MiscControls:
+                        - --debug
+                        - -g
+                        - --gnu
+                    Optim:
+                        - 1
+                    uC99:
+                        - enable
+                    OneElfS:
+                        - enable
+                # LDads:
+                #     RepFail:
+                #         - enable
+                # Aads:
+                #     Ropi:
+                #         - enable
+                # ArmAdsMisc:
+                #     useUlib:
+                #         - enable
+                #     OCR_RVCT1:
+                #         Type:
+                #             - enable
+                #         StartAddress:
+                #             - 0x10
+                #         Size:
+                #             - 0x20
+                # TargetOption:
+                #     BeforeCompile:
+                #         RunUserProg1:
+                #             - run my program
+                #         UserProg1Name:
+                #             - name.bat
         gcc_arm:
+            mcu:
+                - MK20DX128xxx5
             macros:
                 - TOOLCHAIN_ARM_GCC
             misc:
