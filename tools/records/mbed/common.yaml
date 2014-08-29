@@ -1,51 +1,50 @@
-mbed_common:
-    common:
-        group_name:
-            mbed_common
-        include_paths:
-            - mbed/api
-            - mbed/common
-            - mbed/hal
-        source_paths:
-            - mbed/api
-            - mbed/common
-        source_files:
-                - mbed\common\assert.c
-                - mbed\common\board.c
-                - mbed\common\BusIn.cpp
-                - mbed\common\BusInOut.cpp
-                - mbed\common\BusOut.cpp
-                - mbed\common\CallChain.cpp
-                - mbed\common\CAN.cpp
-                - mbed\common\error.c
-                - mbed\common\Ethernet.cpp
-                - mbed\common\exit.c
-                - mbed\common\FileBase.cpp
-                - mbed\common\FileLike.cpp
-                - mbed\common\FilePath.cpp
-                - mbed\common\FileSystemLike.cpp
-                - mbed\common\FunctionPointer.cpp
-                - mbed\common\gpio.c
-                - mbed\common\I2C.cpp
-                - mbed\common\I2CSlave.cpp
-                - mbed\common\InterruptIn.cpp
-                - mbed\common\InterruptManager.cpp
-                - mbed\common\LocalFileSystem.cpp
-                - mbed\common\mbed_interface.c
-                - mbed\common\pinmap_common.c
-                - mbed\common\RawSerial.cpp
-                - mbed\common\retarget.cpp
-                - mbed\common\rtc_time.c
-                - mbed\common\semihost_api.c
-                - mbed\common\Serial.cpp
-                - mbed\common\SerialBase.cpp
-                - mbed\common\SPI.cpp
-                - mbed\common\SPISlave.cpp
-                - mbed\common\Stream.cpp
-                - mbed\common\Ticker.cpp
-                - mbed\common\Timeout.cpp
-                - mbed\common\Timer.cpp
-                - mbed\common\TimerEvent.cpp
-                - mbed\common\us_ticker_api.c
-                - mbed\common\wait_api.c
+common:
+    group_name:
+        - mbed_common
+    include_paths:
+        - mbed/api
+        - mbed/common
+        - mbed/hal
+    source_paths:
+        - mbed/api
+        - mbed/common
+    source_files:
+            - mbed\common\assert.c
+            - mbed\common\board.c
+            - mbed\common\BusIn.cpp
+            - mbed\common\BusInOut.cpp
+            - mbed\common\BusOut.cpp
+            - mbed\common\CallChain.cpp
+            - mbed\common\CAN.cpp
+            - mbed\common\error.c
+            - mbed\common\Ethernet.cpp
+            - mbed\common\exit.c
+            - mbed\common\FileBase.cpp
+            - mbed\common\FileLike.cpp
+            - mbed\common\FilePath.cpp
+            - mbed\common\FileSystemLike.cpp
+            - mbed\common\FunctionPointer.cpp
+            - mbed\common\gpio.c
+            - mbed\common\I2C.cpp
+            - mbed\common\I2CSlave.cpp
+            - mbed\common\InterruptIn.cpp
+            - mbed\common\InterruptManager.cpp
+            - mbed\common\LocalFileSystem.cpp
+            - mbed\common\mbed_interface.c
+            - mbed\common\pinmap_common.c
+            - mbed\common\RawSerial.cpp
+            - mbed\common\retarget.cpp
+            - mbed\common\rtc_time.c
+            - mbed\common\semihost_api.c
+            - mbed\common\Serial.cpp
+            - mbed\common\SerialBase.cpp
+            - mbed\common\SPI.cpp
+            - mbed\common\SPISlave.cpp
+            - mbed\common\Stream.cpp
+            - mbed\common\Ticker.cpp
+            - mbed\common\Timeout.cpp
+            - mbed\common\Timer.cpp
+            - mbed\common\TimerEvent.cpp
+            - mbed\common\us_ticker_api.c
+            - mbed\common\wait_api.c
 

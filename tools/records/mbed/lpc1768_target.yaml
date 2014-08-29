@@ -1,24 +1,23 @@
-lpc1768_target:
-    common:
-        group_name:
-            lpc1768_hal
-        include_paths:
-            - mbed/targets/hal/TARGET_NXP/TARGET_LPC176X
-            - mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/TARGET_MBED_LPC1768
-        source_paths:
-            - mbed/targets/hal/TARGET_NXP/TARGET_LPC176X
-        source_files:
-                - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\analogin_api.c
-                - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\gpio_api.c
-                - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\gpio_irq_api.c
-                - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\i2c_api.c
-                - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\pinmap.c
-                - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\port_api.c
-                - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\pwmout_api.c
-                - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\rtc_api.c
-                - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\serial_api.c
-                - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\sleep.c
-                - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\spi_api.c
-                - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\us_ticker.c
+common:
+    group_name:
+        - lpc1768_hal
+    include_paths:
+        - mbed/targets/hal/TARGET_NXP/TARGET_LPC176X
+        - mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/TARGET_MBED_LPC1768
+    source_paths:
+        - mbed/targets/hal/TARGET_NXP/TARGET_LPC176X
+    source_files:
+            - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\analogin_api.c
+            - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\gpio_api.c
+            - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\gpio_irq_api.c
+            - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\i2c_api.c
+            - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\pinmap.c
+            - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\port_api.c
+            - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\pwmout_api.c
+            - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\rtc_api.c
+            - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\serial_api.c
+            - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\sleep.c
+            - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\spi_api.c
+            - mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\us_ticker.c
 
 
