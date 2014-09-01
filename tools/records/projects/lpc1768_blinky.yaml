@@ -64,6 +64,6 @@ tool_specific:
             - TOOLCHAIN_IAR
         misc:
             CCDebugInfo:
-                - disable
-            GRuntimeLibSelect:
-                - 2
+                - enable
+            CCOptLevel:
+                - 1

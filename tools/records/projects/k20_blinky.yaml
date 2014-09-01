@@ -38,28 +38,6 @@ tool_specific:
                     - enable
                 OneElfS:
                     - enable
-            # LDads:
-            #     RepFail:
-            #         - enable
-            # Aads:
-            #     Ropi:
-            #         - enable
-            # ArmAdsMisc:
-            #     useUlib:
-            #         - enable
-            #     OCR_RVCT1:
-            #         Type:
-            #             - enable
-            #         StartAddress:
-            #             - 0x10
-            #         Size:
-            #             - 0x20
-            # TargetOption:
-            #     BeforeCompile:
-            #         RunUserProg1:
-            #             - run my program
-            #         UserProg1Name:
-            #             - name.bat
     gcc_arm:
         mcu:
             - MK20DX128xxx5
