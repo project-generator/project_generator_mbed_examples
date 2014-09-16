@@ -1,5 +1,3 @@
-name:
-    - lpc1768_blinky
 core:
     - cortex-m3
 common:

@@ -1,5 +1,3 @@
-name:
-    - k20d50m_blinky
 core:
     - cortex-m4
 common:
