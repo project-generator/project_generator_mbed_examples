@@ -1,0 +1,64 @@
+core:
+    - cortex-m4f
+common:
+    include_paths:
+        - examples/blinky
+    source_paths:
+        - examples/blinky
+    source_files:
+        - examples/blinky/main.cpp
+    macros:
+        - TARGET_K64F
+        - TARGET_M4
+        - TARGET_Freescale
+        - __CORTEX_M4
+        - ARM_MATH_CM4
+        - __MBED__=1
+        - CPU_MK64FN1M0VMD12
+        - FSL_RTOS_MBED
+tool_specific:
+    uvision:
+        mcu:
+            - MK64FN1M0xxx12
+        macros:
+            - TOOLCHAIN_ARM_STD
+            - __ASSERT_MSG
+            - TOOLCHAIN_ARM
+        misc:
+            Cads:
+                MiscControls:
+                    - --debug
+                    - -g
+                    - --gnu
+                Ropi:
+                    - enable
+                Optim:
+                    - 1
+                uC99:
+                    - enable
+                OneElfS:
+                    - enable
+    gcc_arm:
+        mcu:
+            - MK64FN1M0xxx12
+        macros:
+            - TOOLCHAIN_ARM_GCC
+        misc:
+            libraries:
+                - m
+                - gcc
+                - c
+                - nosys
+            optimization:
+                - O1
+            compiler_options:
+                - g
+                - ggdb
+                - Wall
+                - fno-strict-aliasing
+                - ffunction-sections
+                - fdata-sections
+                - fno-exceptions
+                - fno-delete-null-pointer-checks
+                - fmessage-length=0
+                - fno-builtin
