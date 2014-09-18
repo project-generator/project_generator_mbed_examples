@@ -66,6 +66,7 @@ common:
         - mbed/libraries/mbed/targets/hal/TARGET_FREESCALE/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/enet/src/fsl_enet_irq.c
         - mbed/libraries/mbed/targets/hal/TARGET_FREESCALE/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/interrupt/src/fsl_interrupt_manager.c
         - mbed/libraries/mbed/targets/hal/TARGET_FREESCALE/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/pit/src/fsl_pit_driver.c
+        - mbed/libraries/mbed/targets/hal/TARGET_FREESCALE/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/pit/src/fsl_pit_irq.c
         - mbed/libraries/mbed/targets/hal/TARGET_FREESCALE/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/adc/fsl_adc_hal.c
         - mbed/libraries/mbed/targets/hal/TARGET_FREESCALE/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/can/fsl_flexcan_hal.c
         - mbed/libraries/mbed/targets/hal/TARGET_FREESCALE/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/dmamux/fsl_dmamux_hal.c
