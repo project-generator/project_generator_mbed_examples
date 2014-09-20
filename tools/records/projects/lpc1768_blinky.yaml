@@ -71,3 +71,34 @@ tool_specific:
                 - 2
             GRuntimeLibSelect:
                 - 2
+    coide:
+        mcu:
+            - LPC1768
+        macros:
+            - TOOLCHAIN_ARM_GCC
+        misc:
+            Link:
+                LinkedLibraries:
+                        - stdc++
+                        - supc++
+                        - m
+                        - gcc
+                        - c
+                        - nosys
+                UserEditLinker:
+                    - --specs=nano.specs
+                    - -u _printf_float
+                    - -u _scanf_float
+            Compile:
+                OptimizationLevel:
+                    - 4
+                UserEditCompiler:
+                    - fno-common
+                    - fmessage-length=0
+                    - Wall
+                    - fno-strict-aliasing
+                    - fno-rtti
+                    - fno-exceptions
+                    - ffunction-sections
+                    - fdata-sections
+                    - std=gnu++98
