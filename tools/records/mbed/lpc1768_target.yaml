@@ -7,17 +7,17 @@ common:
     source_paths:
         - mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X
     source_files:
-            - mbed\libraries\mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\analogin_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\gpio_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\gpio_irq_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\i2c_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\pinmap.c
-            - mbed\libraries\mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\port_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\pwmout_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\rtc_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\serial_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\sleep.c
-            - mbed\libraries\mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\spi_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_NXP\TARGET_LPC176X\us_ticker.c
+            - mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/analogin_api.c
+            - mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/gpio_api.c
+            - mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/gpio_irq_api.c
+            - mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/i2c_api.c
+            - mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/pinmap.c
+            - mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/port_api.c
+            - mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/pwmout_api.c
+            - mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/rtc_api.c
+            - mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/serial_api.c
+            - mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/sleep.c
+            - mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/spi_api.c
+            - mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/us_ticker.c
 
 

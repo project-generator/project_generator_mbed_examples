@@ -38,7 +38,7 @@ tool_specific:
                     - enable
                 OneElfS:
                     - enable
-    gcc_arm:
+    make_gcc_arm:
         mcu:
             - MK64FN1M0xxx12
         macros:

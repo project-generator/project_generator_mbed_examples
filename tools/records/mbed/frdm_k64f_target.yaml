@@ -7,7 +7,7 @@ common:
         - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F
         - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/TARGET_FRDM
     source_files:
-            - mbed\libraries\mbed\targets\hal\TARGET_Freescale\TARGET_KPSDK_MCUS/TARGET_MCU_K64F\TARGET_FRDM/mbed_overrides.c
-            - mbed\libraries\mbed\targets\hal\TARGET_Freescale\TARGET_KPSDK_MCUS/TARGET_MCU_K64F\TARGET_FRDM/PeripheralPins.c
+            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/TARGET_FRDM/mbed_overrides.c
+            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/TARGET_FRDM/PeripheralPins.c
 
 

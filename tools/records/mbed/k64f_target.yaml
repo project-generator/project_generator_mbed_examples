@@ -8,17 +8,17 @@ common:
     source_paths:
         - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F
     source_files:
-            - mbed\libraries\mbed\targets\hal\TARGET_Freescale\TARGET_KPSDK_MCUS/TARGET_MCU_K64F\analogin_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_Freescale\TARGET_KPSDK_MCUS/TARGET_MCU_K64F\gpio_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_Freescale\TARGET_KPSDK_MCUS/TARGET_MCU_K64F\gpio_irq_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_Freescale\TARGET_KPSDK_MCUS/TARGET_MCU_K64F\i2c_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_Freescale\TARGET_KPSDK_MCUS/TARGET_MCU_K64F\pinmap.c
-            - mbed\libraries\mbed\targets\hal\TARGET_Freescale\TARGET_KPSDK_MCUS/TARGET_MCU_K64F\port_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_Freescale\TARGET_KPSDK_MCUS/TARGET_MCU_K64F\pwmout_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_Freescale\TARGET_KPSDK_MCUS/TARGET_MCU_K64F\rtc_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_Freescale\TARGET_KPSDK_MCUS/TARGET_MCU_K64F\serial_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_Freescale\TARGET_KPSDK_MCUS/TARGET_MCU_K64F\sleep.c
-            - mbed\libraries\mbed\targets\hal\TARGET_Freescale\TARGET_KPSDK_MCUS/TARGET_MCU_K64F\spi_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_Freescale\TARGET_KPSDK_MCUS/TARGET_MCU_K64F\us_ticker.c
+            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/analogin_api.c
+            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/gpio_api.c
+            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/gpio_irq_api.c
+            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/i2c_api.c
+            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/pinmap.c
+            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/port_api.c
+            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/pwmout_api.c
+            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/rtc_api.c
+            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/serial_api.c
+            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/sleep.c
+            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/spi_api.c
+            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/us_ticker.c
 
 
