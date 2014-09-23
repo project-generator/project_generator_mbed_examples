@@ -29,8 +29,8 @@ If you want to build exported project/projects, use -b.
 Status
 ------------
 
-Target - K20D50M, LPC1768
-Toolchain - uVision, GCC ARM (Makefile), IAR
+Target - K20D50M, LPC1768, K64F
+Tools - uVision, GCC ARM (Makefile), IAR, CoIDE, Eclipse GNU ARM Makefile
 Examples - blinky demo
 
 Further information
