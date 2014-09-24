@@ -16,3 +16,8 @@ frdm_k64f_blinky:
     - tools/records/mbed/k64f_target.yaml
     - tools/records/projects/frdm_k64f_blinky.yaml
     - tools/records/mbed/frdm_k64f_target.yaml
+disco_f407vg_blinky:
+    - tools/records/mbed/common.yaml
+    - tools/records/mbed/disco_f407vg_cmsis.yaml
+    - tools/records/mbed/disco_f407vg_target.yaml
+    - tools/records/projects/disco_f407vg_blinky.yaml
