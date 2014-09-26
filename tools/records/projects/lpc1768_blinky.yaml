@@ -71,6 +71,10 @@ tool_specific:
                 - 2
             GRuntimeLibSelect:
                 - 2
+            ACaseSensitivity:
+                - enable
+            ADebug:
+                - enable
     coide:
         mcu:
             - LPC1768

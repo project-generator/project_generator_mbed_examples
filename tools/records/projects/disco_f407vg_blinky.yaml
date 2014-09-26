@@ -14,7 +14,7 @@ common:
         - __CORTEX_M4
         - __MBED__=1
 tool_specific:
-    gcc_arm:
+    make_gcc_arm:
         mcu:
             - STM32F407VG
         macros:
