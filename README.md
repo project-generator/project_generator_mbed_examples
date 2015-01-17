@@ -11,7 +11,7 @@ How to use it
 To generate a project, run export.py script, from tools directory. As shown below (uvision is default tool, can be selected using -t option):
 
 <pre>
-project_generator_mbed_examples\tools>python project_generator/export.py -f records/projects.yaml -p k20_blinky -t uvision
+project_generator_mbed_examples\tools>python project_generator/export.py -f records/projects.yaml -p k20d50m_blinky -t uvision
 </pre>
 
 The output:
@@ -19,7 +19,7 @@ The output:
 DEBUG:root:This should be the project root: c:\Code\git_repo\github\project_gene
 rator_mbed_examples
 Processing projects file.
-INFO:root:Generating project: k20_blinky
+INFO:root:Generating project: k20d50m_blinky
 DEBUG:root:Generating: uvision_project_files\k20d50m_blinky\k20d50m_blinky.uvproj
 DEBUG:root:Generating: uvision_project_files\k20d50m_blinky\k20d50m_blinky.uvopt
 </pre>
