@@ -1,6 +1,6 @@
-core:
-    - cortex-m4f
 common:
+    board:
+        - frdm-k64f
     include_paths:
         - examples/blinky
     source_paths:
@@ -18,8 +18,6 @@ common:
         - FSL_RTOS_MBED
 tool_specific:
     uvision:
-        mcu:
-            - MK64FN1M0xxx12
         macros:
             - TOOLCHAIN_ARM_STD
             - __ASSERT_MSG
@@ -39,8 +37,6 @@ tool_specific:
                 OneElfS:
                     - enable
     make_gcc_arm:
-        mcu:
-            - MK64FN1M0xxx12
         macros:
             - TOOLCHAIN_ARM_GCC
         misc:

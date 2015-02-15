@@ -1,6 +1,6 @@
-core:
-    - cortex-m4
 common:
+    board:
+        - disco_f407vg
     include_paths:
         - examples/blinky
     source_paths:
@@ -15,8 +15,6 @@ common:
         - __MBED__=1
 tool_specific:
     make_gcc_arm:
-        mcu:
-            - STM32F407VG
         macros:
             - TOOLCHAIN_ARM_GCC
         misc:
@@ -39,8 +37,6 @@ tool_specific:
                 - fmessage-length=0
                 - fno-builtin
     coide:
-        mcu:
-            - STM32F407VG
         macros:
             - TOOLCHAIN_ARM_GCC
         misc:

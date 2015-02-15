@@ -1,6 +1,6 @@
-core:
-    - cortex-m4
 common:
+    board:
+        - frdm-k20d50m
     include_paths:
         - examples/blinky
     source_paths:
@@ -16,8 +16,6 @@ common:
         - __MBED__=1
 tool_specific:
     uvision:
-        mcu:
-            - MK20DX128xxx5
         macros:
             - TOOLCHAIN_ARM_STD
             - __ASSERT_MSG
@@ -37,8 +35,6 @@ tool_specific:
                 OneElfS:
                     - enable
     make_gcc_arm:
-        mcu:
-            - MK20DX128xxx5
         macros:
             - TOOLCHAIN_ARM_GCC
         misc:
