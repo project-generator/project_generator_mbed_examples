@@ -30,8 +30,6 @@ tool_specific:
                 uC99:
                     - enable
     make_gcc_arm:
-        mcu:
-            - LPC1768
         macros:
             - TOOLCHAIN_ARM_GCC
         misc:
