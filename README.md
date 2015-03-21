@@ -1,4 +1,4 @@
-Project generator - mbed SDK with project generator
+Project generator - mbed SDK example with project generator
 =========================
 
 This example repository shows how to use project generator to generate projects. mbed SDK is a submodule.
@@ -12,7 +12,7 @@ Get project_generator from the [pypi](https://pypi.python.org/pypi/project_gener
 As shown below (uvision is default tool, can be selected using -t option):
 
 <pre>
-project_generator -f projects.yaml -p k20d50m_blinky -t uvision
+project_generator export -f projects.yaml -p k20d50m_blinky -t uvision
 </pre>
 
 The output:

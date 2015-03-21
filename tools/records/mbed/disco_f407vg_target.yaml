@@ -4,21 +4,5 @@ common:
     include_paths:
         - mbed/libraries/mbed/targets/hal/TARGET_STM/TARGET_STM32F407VG
         - mbed/libraries/mbed/targets/hal/TARGET_STM/TARGET_STM32F407VG/TARGET_DISCO_F407VG
-    source_paths:
-        - mbed/libraries/mbed/targets/hal/TARGET_STM/TARGET_STM32F407VG
     source_files:
-            - mbed\libraries\mbed\targets\hal\TARGET_STM\TARGET_STM32F407VG\analogin_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_STM\TARGET_STM32F407VG\analogout_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_STM\TARGET_STM32F407VG\gpio_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_STM\TARGET_STM32F407VG\gpio_irq_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_STM\TARGET_STM32F407VG\i2c_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_STM\TARGET_STM32F407VG\pinmap.c
-            - mbed\libraries\mbed\targets\hal\TARGET_STM\TARGET_STM32F407VG\port_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_STM\TARGET_STM32F407VG\pwmout_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_STM\TARGET_STM32F407VG\rtc_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_STM\TARGET_STM32F407VG\serial_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_STM\TARGET_STM32F407VG\sleep.c
-            - mbed\libraries\mbed\targets\hal\TARGET_STM\TARGET_STM32F407VG\spi_api.c
-            - mbed\libraries\mbed\targets\hal\TARGET_STM\TARGET_STM32F407VG\us_ticker.c
-
-
+            - mbed\libraries\mbed\targets\hal\TARGET_STM\TARGET_STM32F407VG

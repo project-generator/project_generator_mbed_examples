@@ -1,9 +1,7 @@
 common:
-    board:
+    target:
         - frdm-k20d50m
     include_paths:
-        - examples/blinky
-    source_paths:
         - examples/blinky
     source_files:
         - examples/blinky/main.cpp

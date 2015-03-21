@@ -1,9 +1,7 @@
 common:
-    board:
+    target:
         - disco_f407vg
     include_paths:
-        - examples/blinky
-    source_paths:
         - examples/blinky
     source_files:
         - examples/blinky/main.cpp

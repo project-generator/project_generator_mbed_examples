@@ -4,9 +4,6 @@ common:
     include_paths:
         - mbed/libraries/mbed/targets/cmsis
         - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_MCU_K64F
-    source_paths:
-        - mbed/libraries/mbed/targets/cmsis
-        - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_MCU_K64F
     source_files:
             - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_MCU_K64F/cmsis_nvic.c
             - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_MCU_K64F/system_MK64F12.c

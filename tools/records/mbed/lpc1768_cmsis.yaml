@@ -4,12 +4,9 @@ common:
     include_paths:
         - mbed/libraries/mbed/targets/cmsis
         - mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X
-    source_paths:
-        - mbed/libraries/mbed/targets/cmsis
-        - mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X
     source_files:
-            - mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/cmsis_nvic.c
-            - mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/system_LPC17xx.c
+        - mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/cmsis_nvic.c
+        - mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/system_LPC17xx.c
 tool_specific:
     uvision:
         include_paths:

@@ -4,21 +4,6 @@ common:
     include_paths:
         - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/TARGET_K20D50M
         - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/
-    source_paths:
-        - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/TARGET_K20D50M
-        - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/
     source_files:
-            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/analogin_api.c
-            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/gpio_api.c
-            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/gpio_irq_api.c
-            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/i2c_api.c
-            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/pinmap.c
-            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/port_api.c
-            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/pwmout_api.c
-            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/rtc.api.c
-            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/serial_api.c
-            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/sleep.c
-            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/spi_api.c
-            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/us_ticker.c
+            - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX
             - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/TARGET_K20D50M/PeripheralPins.c
-

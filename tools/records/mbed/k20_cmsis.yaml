@@ -4,12 +4,8 @@ common:
     include_paths:
         - mbed/libraries/mbed/targets/cmsis
         - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_K20XX/TARGET_K20D50M
-    source_paths:
-        - mbed/libraries/mbed/targets/cmsis
-        - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_K20XX/TARGET_K20D50M
     source_files:
-            - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_K20XX/TARGET_K20D50M/cmsis_nvic.c
-            - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_K20XX/TARGET_K20D50M/system_MK20D5.c
+            - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_K20XX/TARGET_K20D50M
 tool_specific:
     uvision:
         include_paths:
