@@ -9,6 +9,7 @@ projects:
         - tools/records/mbed/lpc1768_cmsis.yaml
         - tools/records/mbed/lpc1768_target.yaml
         - tools/records/projects/lpc1768_blinky.yaml
+        - tools/records/mbed/proj_set.yaml
     frdm_k64f_blinky:
         - tools/records/mbed/common.yaml
         - tools/records/mbed/freescale_ksdk.yaml
