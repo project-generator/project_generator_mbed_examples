@@ -12,13 +12,7 @@ Get project_generator from the [pypi](https://pypi.python.org/pypi/project_gener
 As shown below (uvision is default tool, can be selected using -t option):
 
 <pre>
-project_generator export -f projects.yaml -p k20d50m_blinky -t uvision
-</pre>
-
-The output:
-<pre>
-Processing projects file.
-INFO:root:Generating project: k20d50m_blinky
+pgen export -f projects.yaml -p k20d50m_blinky -t uvision
 </pre>
 
 If you want to build exported project/projects, use -b.
