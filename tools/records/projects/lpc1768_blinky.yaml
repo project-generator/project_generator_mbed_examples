@@ -14,21 +14,6 @@ common:
         - __CORTEX_M3
         - __MBED__=1
 tool_specific:
-    uvision:
-        macros:
-            - TOOLCHAIN_ARM_STD
-            - __ASSERT_MSG
-            - TOOLCHAIN_ARM
-        misc:
-            Cads:
-                MiscControls:
-                    - --debug
-                    - -g
-                    - --gnu
-                Optim:
-                    - 1
-                uC99:
-                    - enable
     make_gcc_arm:
         macros:
             - TOOLCHAIN_ARM_GCC

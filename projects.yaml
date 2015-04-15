@@ -1,24 +1,33 @@
+# Showcase how to use YAML anchors and references for avoiding duplication
+modules:
+    mbed: &module_mbed
+        - tools/records/mbed/common.yaml
+    lpc1768: &module_lpc1768
+        - tools/records/mbed/lpc1768_cmsis.yaml
+        - tools/records/mbed/lpc1768_target.yaml
+    proj_settings: &proj_settings
+        - tools/records/mbed/proj_set.yaml
+
 projects:
     k20d50m_blinky:
-        - tools/records/mbed/common.yaml
+        - *module_mbed
         - tools/records/mbed/k20_cmsis.yaml
         - tools/records/mbed/k20_target.yaml
         - tools/records/projects/k20_blinky.yaml
     lpc1768_blinky:
-        - tools/records/mbed/common.yaml
-        - tools/records/mbed/lpc1768_cmsis.yaml
-        - tools/records/mbed/lpc1768_target.yaml
+        - *module_lpc1768
+        - *module_mbed
+        - *proj_settings
         - tools/records/projects/lpc1768_blinky.yaml
-        - tools/records/mbed/proj_set.yaml
     frdm_k64f_blinky:
-        - tools/records/mbed/common.yaml
+        - *module_mbed
         - tools/records/mbed/freescale_ksdk.yaml
         - tools/records/mbed/k64f_cmsis.yaml
         - tools/records/mbed/k64f_target.yaml
         - tools/records/projects/frdm_k64f_blinky.yaml
         - tools/records/mbed/frdm_k64f_target.yaml
     disco_f407vg_blinky:
-        - tools/records/mbed/common.yaml
+        - *module_mbed
         - tools/records/mbed/disco_f407vg_cmsis.yaml
         - tools/records/mbed/disco_f407vg_target.yaml
         - tools/records/projects/disco_f407vg_blinky.yaml
