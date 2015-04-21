@@ -31,3 +31,8 @@ projects:
         - tools/records/mbed/disco_f407vg_cmsis.yaml
         - tools/records/mbed/disco_f407vg_target.yaml
         - tools/records/projects/disco_f407vg_blinky.yaml
+
+settings:
+    # change default output dir (generated_projects to a path with keywords)
+    export_dir:
+        - generated_projects/$target$/$project_name$/$tool$
