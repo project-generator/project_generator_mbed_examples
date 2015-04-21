@@ -26,7 +26,7 @@ Examples - blinky demo
 
 Further information
 -------------------------
-* [Project generator github repository](https://github.com/0xc0170/project_generator)
+* [Project generator github repository](https://github.com/project-generator/project_generator)
 
 The documentation to the project generator is in the repo wiki. If you have a question, create an issue, or find my contact email from git log :)
 
