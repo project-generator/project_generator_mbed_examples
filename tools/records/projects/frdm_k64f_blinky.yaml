@@ -1,9 +1,9 @@
 common:
     target:
         - frdm-k64f
-    include_paths:
+    includes:
         - examples/blinky
-    source_files:
+    sources:
         - examples/blinky/main.cpp
     macros:
         - TARGET_K64F

@@ -1,9 +1,11 @@
 common:
+    output:
+        - lib
     target:
         - frdm-k20d50m
-    include_paths:
+    includes:
         - examples/blinky
-    source_files:
+    sources:
         - examples/blinky/main.cpp
     macros:
         - TARGET_K20D50M

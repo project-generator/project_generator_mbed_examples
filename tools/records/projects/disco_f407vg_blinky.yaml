@@ -1,9 +1,9 @@
 common:
     target:
         - disco_f407vg
-    include_paths:
+    includes:
         - examples/blinky
-    source_files:
+    sources:
         - examples/blinky/main.cpp
     macros:
         - TARGET_DISCO_F407VG

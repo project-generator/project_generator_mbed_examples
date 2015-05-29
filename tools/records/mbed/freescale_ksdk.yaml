@@ -1,7 +1,7 @@
 common:
     group_name:
         - freescale_ksdk
-    include_paths:
+    includes:
         - mbed/libraries/mbed/targets/hal/TARGET_FREESCALE/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE
         - mbed/libraries/mbed/targets/hal/TARGET_FREESCALE/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/common/phyksz8081
         - mbed/libraries/mbed/targets/hal/TARGET_FREESCALE/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/clock
@@ -31,7 +31,7 @@ common:
         - mbed/libraries/mbed/targets/hal/TARGET_FREESCALE/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/uart
         - mbed/libraries/mbed/targets/hal/TARGET_FREESCALE/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/wdog
         - mbed/libraries/mbed/targets/hal/TARGET_FREESCALE/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/utilities/
-    source_files:
+    sources:
         - mbed/libraries/mbed/targets/hal/TARGET_FREESCALE/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/common/phyksz8081/fsl_phy_driver.c
         - mbed/libraries/mbed/targets/hal/TARGET_FREESCALE/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/clock/fsl_clock_manager.c
         - mbed/libraries/mbed/targets/hal/TARGET_FREESCALE/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/enet/src/fsl_enet_irq.c

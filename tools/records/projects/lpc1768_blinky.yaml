@@ -1,11 +1,18 @@
 common:
     # output:
-    #     - library
+    #     - lib
+    tools_supported:
+        - iar_arm
+        - make_gcc_arm
+        - coide
+        - uvision
+    # debugger:
+    #     - j-link
     target:
         - mbed-lpc1768
-    include_paths:
+    includes:
         - examples/blinky
-    source_files:
+    sources:
         - examples/blinky/main.cpp
     macros:
         - TARGET_LPC1768
