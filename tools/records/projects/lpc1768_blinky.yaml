@@ -1,11 +1,15 @@
 common:
+    # Output - exe or lib
     # output:
     #     - lib
+
+    # Tools supported by this project - optional
     tools_supported:
         - iar_arm
         - make_gcc_arm
         - coide
         - uvision
+    # Choose a debugger
     # debugger:
     #     - j-link
     target:
@@ -43,50 +47,10 @@ tool_specific:
                 - fno-delete-null-pointer-checks
                 - fmessage-length=0
                 - fno-builtin
-    iar:
-        macros:
-            - TOOLCHAIN_IAR
-        misc:
-            CCDebugInfo:
-                - enable
-            CCOptLevel:
-                - 1
-            IccLang:
-                - 1
-            IccCppDialect:
-                - 2
-            GRuntimeLibSelect:
-                - 2
-            ACaseSensitivity:
-                - enable
-            ADebug:
-                - enable
+    # You can overwrite a projects template
+    # iar:
+    #     template:
+    #             - ./template.ewp
     coide:
         macros:
             - TOOLCHAIN_ARM_GCC
-        misc:
-            Link:
-                LinkedLibraries:
-                        - stdc++
-                        - supc++
-                        - m
-                        - gcc
-                        - c
-                        - nosys
-                UserEditLinker:
-                    - --specs=nano.specs
-                    - -u _printf_float
-                    - -u _scanf_float
-            Compile:
-                OptimizationLevel:
-                    - 4
-                UserEditCompiler:
-                    - fno-common
-                    - fmessage-length=0
-                    - Wall
-                    - fno-strict-aliasing
-                    - fno-rtti
-                    - fno-exceptions
-                    - ffunction-sections
-                    - fdata-sections
-                    - std=gnu++98

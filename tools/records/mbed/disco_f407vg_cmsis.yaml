@@ -5,7 +5,7 @@ common:
         - mbed/libraries/mbed/targets/cmsis
         - mbed/libraries/mbed/targets/cmsis/TARGET_STM/TARGET_STM32F407VG
     sources:
-            - mbed/libraries/mbed/targets/cmsis/TARGET_STM/TARGET_STM32F407VG
+        - mbed/libraries/mbed/targets/cmsis/TARGET_STM/TARGET_STM32F407VG
 tool_specific:
     uvision:
         includes:
