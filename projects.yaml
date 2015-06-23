@@ -36,13 +36,13 @@ settings:
     tools:
         coide:
             template:
-                - tools/templates/template.coproj
+                - tools/records/templates/template.coproj
         iar:
             template:
-                - tools/templates/template.ewp
+                - tools/records/templates/template.ewp
         uvision:
             template:
-                - tools/templates/templates.uvproj
+                - tools/records/templates/templates.uvproj
     # change default output dir (generated_projects to a path with keywords)
     # export_dir:
     #     - generated_projects/$target$/$project_name$/$tool$
