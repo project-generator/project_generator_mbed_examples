@@ -1,9 +1,9 @@
 common:
-    group_name:
-        - mbed_common
-    include_paths:
+    includes:
         - mbed\libraries\mbed\api
         - mbed\libraries\mbed\common
         - mbed\libraries\mbed/hal
-    source_files:
+    sources:
+        # This defines a group
+        mbed_common:
             - mbed/libraries/mbed/common # all files are included within this dir

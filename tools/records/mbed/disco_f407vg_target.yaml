@@ -1,8 +1,8 @@
 common:
     group_name:
         - disco_f407vg_hal
-    include_paths:
+    includes:
         - mbed/libraries/mbed/targets/hal/TARGET_STM/TARGET_STM32F407VG
         - mbed/libraries/mbed/targets/hal/TARGET_STM/TARGET_STM32F407VG/TARGET_DISCO_F407VG
-    source_files:
+    sources:
             - mbed\libraries\mbed\targets\hal\TARGET_STM\TARGET_STM32F407VG

@@ -1,8 +1,8 @@
 common:
     group_name:
         - lpc1768_hal
-    include_paths:
+    includes:
         - mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X
         - mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/TARGET_MBED_LPC1768
-    source_files:
+    sources:
             - mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X

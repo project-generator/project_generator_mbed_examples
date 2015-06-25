@@ -1,14 +1,14 @@
 common:
     group_name:
         - mcu_k64f_hal
-    include_paths:
+    includes:
         - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS
         - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F
         - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/device
         - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/device/device
         - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/device/MK64F12
         - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/device/device/MK64F12
-    source_files:
+    sources:
             - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS
             - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/MK64F12
 

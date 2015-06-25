@@ -33,6 +33,16 @@ projects:
         - tools/records/projects/disco_f407vg_blinky.yaml
 
 settings:
+    tools:
+        coide:
+            template:
+                - tools/records/templates/template.coproj
+        iar:
+            template:
+                - tools/records/templates/template.ewp
+        uvision:
+            template:
+                - tools/records/templates/templates.uvproj
     # change default output dir (generated_projects to a path with keywords)
-    export_dir:
-        - generated_projects/$target$/$project_name$/$tool$
+    # export_dir:
+    #     - generated_projects/$target$/$project_name$/$tool$

@@ -1,9 +1,11 @@
 common:
+    output:
+        - lib
     target:
         - frdm-k20d50m
-    include_paths:
+    includes:
         - examples/blinky
-    source_files:
+    sources:
         - examples/blinky/main.cpp
     macros:
         - TARGET_K20D50M
@@ -18,20 +20,6 @@ tool_specific:
             - TOOLCHAIN_ARM_STD
             - __ASSERT_MSG
             - TOOLCHAIN_ARM
-        misc:
-            Cads:
-                MiscControls:
-                    - --debug
-                    - -g
-                    - --gnu
-                Ropi:
-                    - enable
-                Optim:
-                    - 1
-                uC99:
-                    - enable
-                OneElfS:
-                    - enable
     make_gcc_arm:
         macros:
             - TOOLCHAIN_ARM_GCC
