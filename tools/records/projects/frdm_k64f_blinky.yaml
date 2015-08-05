@@ -1,8 +1,6 @@
 common:
     target:
         - frdm-k64f
-    includes:
-        - examples/blinky
     sources:
         - examples/blinky/main.cpp
     macros:
@@ -29,6 +27,7 @@ tool_specific:
                 - gcc
                 - c
                 - nosys
+                - stdc++
             optimization:
                 - O1
             compiler_options:

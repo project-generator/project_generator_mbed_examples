@@ -1,6 +1,6 @@
 common:
     target:
-        - disco_f407vg
+        - disco-f407vg
     includes:
         - examples/blinky
     sources:
@@ -21,6 +21,7 @@ tool_specific:
                 - gcc
                 - c
                 - nosys
+                - stdc++
             optimization:
                 - O1
             compiler_options:

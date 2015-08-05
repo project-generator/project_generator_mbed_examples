@@ -1,6 +1,4 @@
 common:
-    output:
-        - lib
     target:
         - frdm-k20d50m
     includes:
@@ -29,6 +27,7 @@ tool_specific:
                 - gcc
                 - c
                 - nosys
+                - stdc++
             optimization:
                 - O1
             compiler_options:

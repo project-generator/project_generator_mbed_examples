@@ -42,7 +42,7 @@ settings:
                 - tools/records/templates/template.ewp
         uvision:
             template:
-                - tools/records/templates/templates.uvproj
+                - tools/records/templates/template.uvproj
     # change default output dir (generated_projects to a path with keywords)
     # export_dir:
-    #     - generated_projects/$target$/$project_name$/$tool$
+    #     - generated_projects/{target}/{project_name}/{tool}
