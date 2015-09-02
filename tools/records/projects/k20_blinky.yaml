@@ -20,7 +20,8 @@ tool_specific:
             - TOOLCHAIN_ARM
     make_gcc_arm:
         macros:
-            - TOOLCHAIN_ARM_GCC
+            - TOOLCHAIN_GCC_ARM
+            - TOOLCHAIN_GCC
         misc:
             libraries:
                 - m
@@ -41,3 +42,35 @@ tool_specific:
                 - fno-delete-null-pointer-checks
                 - fmessage-length=0
                 - fno-builtin
+    cmake_gcc_arm:
+        macros:
+            - TOOLCHAIN_GCC_ARM
+            - TOOLCHAIN_GCC
+        misc:
+            standard_libraries:
+                - nosys
+                - stdc++
+                - m
+                - gcc
+                - c
+            optimization:
+                - O1
+            common_flags:
+                - -g
+                - -ggdb
+                - -Wall
+                - -fno-strict-aliasing
+                - -ffunction-sections
+                - -fdata-sections
+                - -fno-exceptions
+                - -fno-delete-null-pointer-checks
+                - -fmessage-length=0
+                - -fno-builtin
+            linker_flags:
+                - -specs=nano.specs
+                - -Wl,--wrap,main
+            c_flags:
+                - -std=gnu99
+            cxx_flags:
+                - -std=gnu++98
+                - -fno-rtti

@@ -20,7 +20,8 @@ tool_specific:
             - TOOLCHAIN_ARM
     make_gcc_arm:
         macros:
-            - TOOLCHAIN_ARM_GCC
+            - TOOLCHAIN_GCC_ARM
+            - TOOLCHAIN_GCC
         misc:
             libraries:
                 - m
