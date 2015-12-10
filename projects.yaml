@@ -32,6 +32,16 @@ projects:
         - tools/records/mbed/disco_f407vg_target.yaml
         - tools/records/projects/disco_f407vg_blinky.yaml
 
+# workspace showcase, where we can group multiple projects
+# workspaces:
+#     workspace_test:
+#         projects:
+#             # - k20d50m_blinky
+#             - lpc1768_blinky
+#         settings:
+#             export_dir:
+#                 - generated_projects\workspaces\{workspace_name}
+
 settings:
     tools:
         coide:

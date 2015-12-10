@@ -1,8 +1,10 @@
 common:
     includes:
-        - mbed\libraries\mbed\api
-        - mbed\libraries\mbed\common
-        - mbed\libraries\mbed/hal
+        # You can define an include group like this also
+        # common_includes:
+            - mbed\libraries\mbed\api
+            - mbed\libraries\mbed\common
+            - mbed\libraries\mbed/hal
     sources:
         # This defines a group
         mbed_common:

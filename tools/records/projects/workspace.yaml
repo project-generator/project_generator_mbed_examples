@@ -1,0 +1,5 @@
+common:
+    export_dir:
+        - generated_projects
+    projects:
+        - lpc1768_blinky
