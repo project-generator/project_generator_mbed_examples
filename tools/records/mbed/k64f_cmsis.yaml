@@ -1,10 +1,9 @@
 common:
-    group_name:
-        - k64f_cmsis
     includes:
         - mbed/libraries/mbed/targets/cmsis
         - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_MCU_K64F
     sources:
+        k64f_cmsis:
             - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_MCU_K64F/cmsis_nvic.c
             - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_MCU_K64F/system_MK64F12.c
 tool_specific:
@@ -12,12 +11,14 @@ tool_specific:
         includes:
             - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_MCU_K64F/TOOLCHAIN_ARM_STD
         sources:
+            k64f_cmsis:
             - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_MCU_K64F/TOOLCHAIN_ARM_STD/startup_MK64F12.s
             - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_MCU_K64F/TOOLCHAIN_ARM_STD/sys.cpp
         linker_file:
             - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_MCU_K64F/TOOLCHAIN_ARM_STD/MK64F.sct
     gcc_arm:
         sources:
+            k64f_cmsis:
             - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_MCU_K64F/TOOLCHAIN_GCC_ARM/startup_MK64F12.s
         linker_file:
             - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_MCU_K64F/TOOLCHAIN_GCC_ARM/MK64F12.ld

@@ -1,9 +1,8 @@
 common:
-    group_name:
-        - frdm_k64f_hal
     includes:
         - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/TARGET_FRDM
     sources:
+        frdm_k64f_hal:
             - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/TARGET_FRDM/mbed_overrides.c
             - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/TARGET_FRDM/PeripheralPins.c
 

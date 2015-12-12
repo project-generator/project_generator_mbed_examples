@@ -1,32 +1,35 @@
 common:
-    group_name:
-        - stm32f407vg
     includes:
         - mbed/libraries/mbed/targets/cmsis
         - mbed/libraries/mbed/targets/cmsis/TARGET_STM/TARGET_STM32F407VG
     sources:
+        stm32f407vg:
         - mbed/libraries/mbed/targets/cmsis/TARGET_STM/TARGET_STM32F407VG
 tool_specific:
     uvision:
         includes:
             - mbed/libraries/mbed/targets/cmsis/TARGET_STM/TARGET_STM32F407VG/TOOLCHAIN_ARM_STD
         sources:
+            stm32f407vg:
             - mbed/libraries/mbed/targets/cmsis/TARGET_STM/TARGET_STM32F407VG/TOOLCHAIN_ARM_STD/startup_STM32F40x.s
             - mbed/libraries/mbed/targets/cmsis/TARGET_STM/TARGET_STM32F407VG/TOOLCHAIN_ARM_STD/sys.cpp
         linker_file:
             - mbed/libraries/mbed/targets/cmsis/TARGET_STM/TARGET_STM32F407VG/TOOLCHAIN_ARM_STD/STM32F407.sct
     gcc_arm:
         sources:
+            stm32f407vg:
             - mbed/libraries/mbed/targets/cmsis/TARGET_STM/TARGET_STM32F407VG/TOOLCHAIN_GCC_ARM/startup_stm32f407xx.s
         linker_file:
             - mbed/libraries/mbed/targets/cmsis/TARGET_STM/TARGET_STM32F407VG/TOOLCHAIN_GCC_ARM/STM32F407.ld
     iar:
         sources:
+            stm32f407vg:
             - mbed/libraries/mbed/targets/cmsis/TARGET_STM/TARGET_STM32F407VG/TOOLCHAIN_IAR/startup_LPC17xx.s
         linker_file:
             - mbed/libraries/mbed/targets/cmsis/TARGET_STM/TARGET_STM32F407VG/TOOLCHAIN_IAR/LPC17xx.icf
     coide:
         sources:
+            stm32f407vg:
             - mbed/libraries/mbed/targets/cmsis/TARGET_STM/TARGET_STM32F407VG/TOOLCHAIN_GCC_ARM/startup_stm32f407xx.s
         linker_file:
             - mbed/libraries/mbed/targets/cmsis/TARGET_STM/TARGET_STM32F407VG/TOOLCHAIN_GCC_ARM/STM32F407.ld
