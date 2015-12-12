@@ -1,6 +1,8 @@
 common:
     target:
         - frdm-k20d50m
+    # debugger:
+    #     - cmsis-dap
     includes:
         - examples/blinky
     sources:
@@ -18,20 +20,29 @@ tool_specific:
             - TOOLCHAIN_ARM_STD
             - __ASSERT_MSG
             - TOOLCHAIN_ARM
+        # misc:
+        #     cxx_flags:
+        #     - --c99
+        #     - -Otime
+        #     - --enum_is_int
+        #     - -g
+        #     asm_flags:
+        #     - -g
+        #     ld_flags:
+        #     - --library_type=microlib
     make_gcc_arm:
         macros:
             - TOOLCHAIN_GCC_ARM
             - TOOLCHAIN_GCC
         misc:
-            libraries:
+            standard_libraries:
                 - m
                 - gcc
                 - c
                 - nosys
                 - stdc++
-            optimization:
+            common_flags:
                 - O1
-            compiler_options:
                 - g
                 - ggdb
                 - Wall
@@ -42,6 +53,14 @@ tool_specific:
                 - fno-delete-null-pointer-checks
                 - fmessage-length=0
                 - fno-builtin
+            ld_flags:
+                - -specs=nano.specs
+                - -Wl,--wrap,main
+            cxx_flags:
+                - fno-rtti
+                - std=gnu++98
+            c_flags:
+                - std=gnu99
     cmake_gcc_arm:
         macros:
             - TOOLCHAIN_GCC_ARM
@@ -53,9 +72,8 @@ tool_specific:
                 - m
                 - gcc
                 - c
-            optimization:
-                - O1
             common_flags:
+                - O1
                 - -g
                 - -ggdb
                 - -Wall
@@ -66,7 +84,8 @@ tool_specific:
                 - -fno-delete-null-pointer-checks
                 - -fmessage-length=0
                 - -fno-builtin
-            linker_flags:
+                - -mthumb
+            ld_flags:
                 - -specs=nano.specs
                 - -Wl,--wrap,main
             c_flags:

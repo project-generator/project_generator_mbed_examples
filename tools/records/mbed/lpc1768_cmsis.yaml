@@ -1,10 +1,9 @@
 common:
-    group_name:
-        - lpc1768_cmsis
     includes:
         - mbed/libraries/mbed/targets/cmsis
         - mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X
     sources:
+        lpc1768_cmsis:
         - mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/cmsis_nvic.c
         - mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/system_LPC17xx.c
 tool_specific:
@@ -12,17 +11,20 @@ tool_specific:
         includes:
             - mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_ARM_STD
         sources:
+            lpc1768_cmsis:
             - mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_ARM_STD/startup_LPC17xx.s
             - mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_ARM_STD/sys.cpp
         linker_file:
             - mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_ARM_STD/LPC1768.sct
     gcc_arm:
         sources:
+            lpc1768_cmsis:
             - mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_ARM/startup_LPC17xx.s
         linker_file:
             - mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_ARM/LPC1768.ld
     iar:
         sources:
+            lpc1768_cmsis:
             - mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_IAR/startup_LPC17xx.s
         linker_file:
             - mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_IAR/LPC17xx.icf

@@ -17,15 +17,14 @@ tool_specific:
             - TOOLCHAIN_GCC_ARM
             - TOOLCHAIN_GCC
         misc:
-            libraries:
+            standard_libraries:
                 - m
                 - gcc
                 - c
                 - nosys
                 - stdc++
-            optimization:
+            common_flags:
                 - O1
-            compiler_options:
                 - g
                 - ggdb
                 - Wall
@@ -36,6 +35,14 @@ tool_specific:
                 - fno-delete-null-pointer-checks
                 - fmessage-length=0
                 - fno-builtin
+            ld_flags:
+                - -specs=nano.specs
+                - -Wl,--wrap,main
+            cxx_flags:
+                - fno-rtti
+                - std=gnu++98
+            c_flags:
+                - std=gnu99
     coide:
         macros:
             - TOOLCHAIN_GCC

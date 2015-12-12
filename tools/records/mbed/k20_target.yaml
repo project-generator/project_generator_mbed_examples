@@ -1,9 +1,8 @@
 common:
-    group_name:
-        - k20_hal
     includes:
         - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/TARGET_K20D50M
         - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/
     sources:
+        k20_hal:
             - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX
             - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/TARGET_K20D50M/PeripheralPins.c
