@@ -9,19 +9,18 @@ How to use it
 ------------
 
 Get project_generator from the [pypi](https://pypi.python.org/pypi/project_generator) - use pip or easy install or anything similar. This should download and install the package, allow us to use project_generator.
-As shown below (uvision is default tool, can be selected using -t option):
 
-<pre>
-pgen export -f projects.yaml -p k20d50m_blinky -t uvision
-</pre>
+```
+progen generate -f projects.yaml -p k20d50m_blinky -t uvision
+```
 
-If you want to build exported project/projects, use -b.
+If you want to build generaed project/projects, use -b argument.
 
 Status
 ------------
 
 Target - K20D50M, LPC1768, K64F, Disco f407vg
-Tools - uVision, GCC ARM (Makefile), IAR, CoIDE, Eclipse GNU ARM Makefile
+Tools - uVision, GCC ARM (Makefile), IAR, CoIDE, Eclipse GNU ARM Makefile, CMake
 Examples - blinky demo
 
 Further information
