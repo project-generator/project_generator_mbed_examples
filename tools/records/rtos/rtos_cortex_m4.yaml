@@ -1,0 +1,15 @@
+common:
+  includes:
+    rtos:
+    - mbed\libraries\rtos\rtx\TARGET_CORTEX_M
+  sources:
+    rtos:
+    - mbed\libraries\rtos\rtx\TARGET_CORTEX_M
+    - mbed\libraries\rtos\rtx\TARGET_CORTEX_M\TARGET_RTOS_M4_M7\TOOLCHAIN_ARM
+tool_specific:
+  uvision:
+    rtos:
+    - rtx\TARGET_CORTEX_M\TARGET_RTOS_M4_M7\TOOLCHAIN_ARM
+  iar:
+    rtos:
+    - rtx\TARGET_CORTEX_M\TARGET_RTOS_M4_M7\TOOLCHAIN_IAR
