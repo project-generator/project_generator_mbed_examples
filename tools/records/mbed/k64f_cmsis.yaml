@@ -22,4 +22,11 @@ tool_specific:
             - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_MCU_K64F/TOOLCHAIN_GCC_ARM/startup_MK64F12.s
         linker_file:
             - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_MCU_K64F/TOOLCHAIN_GCC_ARM/MK64F12.ld
-
+    iar:
+        includes:
+            - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_MCU_K64F/TOOLCHAIN_IAR
+        sources:
+            k64f_cmsis:
+            - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_MCU_K64F/TOOLCHAIN_IAR/startup_MK64F12.S
+        linker_file:
+            - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_MCU_K64F/TOOLCHAIN_IAR/MK64F.icf
