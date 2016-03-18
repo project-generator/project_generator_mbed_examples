@@ -1,0 +1,77 @@
+tool_specific:
+    uvision:
+        macros:
+            - TOOLCHAIN_ARM_STD
+            - __ASSERT_MSG
+            - TOOLCHAIN_ARM
+    iar:
+        macros:
+            - TOOLCHAIN_IAR
+    make_gcc_arm:
+        macros:
+            - TOOLCHAIN_GCC_ARM
+            - TOOLCHAIN_GCC
+        misc:
+            standard_libraries:
+                - m
+                - gcc
+                - c
+                - nosys
+                - stdc++
+            common_flags:
+                - -O1
+                - -g
+                - -ggdb
+                - -Wall
+                - -fno-strict-aliasing
+                - -ffunction-sections
+                - -fdata-sections
+                - -fno-exceptions
+                - -fno-delete-null-pointer-checks
+                - -fmessage-length=0
+                - -fno-builtin
+                - -mthumb
+            ld_flags:
+                - -Wl,--wrap,main
+                - -specs=nano.specs
+            cxx_flags:
+                - -fno-rtti
+                - -std=gnu++98
+            c_flags:
+                - -std=gnu99
+    coide:
+        macros:
+            - TOOLCHAIN_GCC_ARM
+            - TOOLCHAIN_GCC
+    cmake_gcc_arm:
+        macros:
+            - TOOLCHAIN_GCC_ARM
+            - TOOLCHAIN_GCC
+        misc:
+            standard_libraries:
+                - stdc++
+                - m
+                - gcc
+                - c
+                - nosys
+            common_flags:
+                - -O1
+                - -g
+                - -ggdb
+                - -Wall
+                - -fno-strict-aliasing
+                - -ffunction-sections
+                - -fdata-sections
+                - -fno-exceptions
+                - -fno-delete-null-pointer-checks
+                - -fmessage-length=0
+                - -fno-builtin
+                - -mthumb
+            ld_flags:
+                - -specs=nano.specs
+                - -Wl,--wrap,main
+            c_flags:
+                - -std=gnu99
+            cxx_flags:
+                - -std=gnu++98
+                - -fno-rtti

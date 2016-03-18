@@ -2,11 +2,20 @@
 modules:
     mbed: &module_mbed
         - tools/records/mbed/common.yaml
+        - tools/records/toolchains/toolchain.yaml
     lpc1768: &module_lpc1768
         - tools/records/mbed/lpc1768_cmsis.yaml
         - tools/records/mbed/lpc1768_target.yaml
     proj_settings: &proj_settings
         - tools/records/mbed/proj_set.yaml
+    frdm_k64f: &module_frdm_k64f
+        - tools/records/mbed/freescale_ksdk.yaml
+        - tools/records/mbed/k64f_cmsis.yaml
+        - tools/records/mbed/k64f_target.yaml
+        - tools/records/mbed/frdm_k64f_target.yaml
+    mbed_k64f_gcc_arm_lib: &module_mbed_k64f_gcc_arm_lib
+        - tools/records/mbed/mbed_k64f_lib.yaml
+        - tools/records/toolchains/toolchain.yaml
 
 projects:
     k20d50m_blinky:
@@ -21,11 +30,11 @@ projects:
         - tools/records/projects/lpc1768_blinky.yaml
     frdm_k64f_blinky:
         - *module_mbed
-        - tools/records/mbed/freescale_ksdk.yaml
-        - tools/records/mbed/k64f_cmsis.yaml
-        - tools/records/mbed/k64f_target.yaml
+        - *module_frdm_k64f
         - tools/records/projects/frdm_k64f_blinky.yaml
-        - tools/records/mbed/frdm_k64f_target.yaml
+    frdm_k64f_blinky_lib:
+        - *module_mbed_k64f_gcc_arm_lib
+        - tools/records/projects/frdm_k64f_blinky.yaml
     disco_f407vg_blinky:
         - *module_mbed
         - tools/records/mbed/disco_f407vg_cmsis.yaml

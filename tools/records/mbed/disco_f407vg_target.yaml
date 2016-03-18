@@ -5,3 +5,9 @@ common:
     sources:
         disco_f407vg_hal:
             - mbed\libraries\mbed\targets\hal\TARGET_STM\TARGET_STM32F407VG
+    macros:
+        - TARGET_DISCO_F407VG
+        - TARGET_M4
+        - TARGET_STM
+        - __CORTEX_M4
+        - __MBED__=1

@@ -40,74 +40,8 @@ tool_specific:
     #         asm_flags:
     #         - --asm_flags_test
     #         - --asm_flags_test
-    make_gcc_arm:
-        macros:
-            - TOOLCHAIN_GCC_ARM
-            - TOOLCHAIN_GCC
-        misc:
-            standard_libraries:
-                - m
-                - gcc
-                - c
-                - nosys
-                - stdc++
-            common_flags:
-                - -O1
-                - -g
-                - -ggdb
-                - -Wall
-                - -fno-strict-aliasing
-                - -ffunction-sections
-                - -fdata-sections
-                - -fno-exceptions
-                - -fno-delete-null-pointer-checks
-                - -fmessage-length=0
-                - -fno-builtin
-            cxx_flags:
-                - -fno-rtti
-                - -std=gnu++98
-            c_flags:
-                - -std=gnu99
-            ld_flags:
-                - --specs=nano.specs
-                - -Wl,--wrap,main
-    cmake_gcc_arm:
-        macros:
-            - TOOLCHAIN_GCC_ARM
-            - TOOLCHAIN_GCC
-        misc:
-            standard_libraries:
-                - stdc++
-                - m
-                - gcc
-                - c
-                - nosys
-            common_flags:
-                - -O1
-                - -g
-                - -ggdb
-                - -Wall
-                - -fno-strict-aliasing
-                - -ffunction-sections
-                - -fdata-sections
-                - -fno-exceptions
-                - -fno-delete-null-pointer-checks
-                - -fmessage-length=0
-                - -fno-builtin
-                - -mthumb
-            ld_flags:
-                - -specs=nano.specs
-                - -Wl,--wrap,main
-            c_flags:
-                - -std=gnu99
-            cxx_flags:
-                - -std=gnu++98
-                - -fno-rtti
+
     # You can overwrite a projects template
     # iar:
     #     template:
     #             - ./template.ewp
-    coide:
-        macros:
-            - TOOLCHAIN_GCC_ARM
-            - TOOLCHAIN_GCC

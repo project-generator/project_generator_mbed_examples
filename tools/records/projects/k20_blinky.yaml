@@ -7,19 +7,12 @@ common:
         - examples/blinky
     sources:
         - examples/blinky/main.cpp
-    macros:
-        - TARGET_K20D50M
-        - TARGET_M4
-        - TARGET_Freescale
-        - __CORTEX_M4
-        - ARM_MATH_CM4
-        - __MBED__=1
-tool_specific:
-    uvision:
-        macros:
-            - TOOLCHAIN_ARM_STD
-            - __ASSERT_MSG
-            - TOOLCHAIN_ARM
+# tool_specific:
+#     uvision:
+#         macros:
+#             - TOOLCHAIN_ARM_STD
+#             - __ASSERT_MSG
+#             - TOOLCHAIN_ARM
         # misc:
         #     cxx_flags:
         #     - --c99
@@ -30,66 +23,3 @@ tool_specific:
         #     - -g
         #     ld_flags:
         #     - --library_type=microlib
-    make_gcc_arm:
-        macros:
-            - TOOLCHAIN_GCC_ARM
-            - TOOLCHAIN_GCC
-        misc:
-            standard_libraries:
-                - m
-                - gcc
-                - c
-                - nosys
-                - stdc++
-            common_flags:
-                - O1
-                - g
-                - ggdb
-                - Wall
-                - fno-strict-aliasing
-                - ffunction-sections
-                - fdata-sections
-                - fno-exceptions
-                - fno-delete-null-pointer-checks
-                - fmessage-length=0
-                - fno-builtin
-            ld_flags:
-                - -specs=nano.specs
-                - -Wl,--wrap,main
-            cxx_flags:
-                - fno-rtti
-                - std=gnu++98
-            c_flags:
-                - std=gnu99
-    cmake_gcc_arm:
-        macros:
-            - TOOLCHAIN_GCC_ARM
-            - TOOLCHAIN_GCC
-        misc:
-            standard_libraries:
-                - nosys
-                - stdc++
-                - m
-                - gcc
-                - c
-            common_flags:
-                - O1
-                - -g
-                - -ggdb
-                - -Wall
-                - -fno-strict-aliasing
-                - -ffunction-sections
-                - -fdata-sections
-                - -fno-exceptions
-                - -fno-delete-null-pointer-checks
-                - -fmessage-length=0
-                - -fno-builtin
-                - -mthumb
-            ld_flags:
-                - -specs=nano.specs
-                - -Wl,--wrap,main
-            c_flags:
-                - -std=gnu99
-            cxx_flags:
-                - -std=gnu++98
-                - -fno-rtti
