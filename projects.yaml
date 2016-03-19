@@ -13,9 +13,13 @@ modules:
         - tools/records/mbed/k64f_cmsis.yaml
         - tools/records/mbed/k64f_target.yaml
         - tools/records/mbed/frdm_k64f_target.yaml
+        - tools/records/mbed/frdm_k64f_target_settings.yaml
     mbed_k64f_gcc_arm_lib: &module_mbed_k64f_gcc_arm_lib
         - tools/records/mbed/mbed_k64f_lib.yaml
         - tools/records/toolchains/toolchain.yaml
+    rtos_cortex_m4: &rtos_cortex_m4
+        - tools/records/rtos/rtos_cortex_m4.yaml
+        - tools/records/rtos/rtos_common.yaml
 
 projects:
     k20d50m_blinky:
@@ -35,6 +39,11 @@ projects:
     frdm_k64f_blinky_lib:
         - *module_mbed_k64f_gcc_arm_lib
         - tools/records/projects/frdm_k64f_blinky.yaml
+    frdm_k64f_rtos_basic_lib:
+        - *module_mbed_k64f_gcc_arm_lib
+        - *rtos_cortex_m4
+        - tools/records/projects/frdm_k64f_rtos_basic.yaml
+        - tools/records/mbed/frdm_k64f_target_settings.yaml
     disco_f407vg_blinky:
         - *module_mbed
         - tools/records/mbed/disco_f407vg_cmsis.yaml

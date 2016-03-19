@@ -44,3 +44,8 @@ tool_specific:
     - mbed/build/mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM
     linker_file:
     - mbed/build/mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/K64FN1M0xxx12.ld
+  uvision:
+    sources:
+    - mbed/build/mbed/TARGET_K64F/TOOLCHAIN_ARM_STD
+    linker_file:
+    - mbed/build/mbed/TARGET_K64F/TOOLCHAIN_ARM_STD/MK64F.sct
