@@ -2,12 +2,11 @@
 modules:
     mbed: &module_mbed
         - tools/records/mbed/common.yaml
-        - tools/records/toolchains/toolchain.yaml
     lpc1768: &module_lpc1768
         - tools/records/mbed/lpc1768_cmsis.yaml
         - tools/records/mbed/lpc1768_target.yaml
-    proj_settings: &proj_settings
-        - tools/records/mbed/proj_set.yaml
+    mbed_toolchain_settings: &mbed_toolchain_settings
+        - tools/records/toolchains/toolchain.yaml
     frdm_k64f: &module_frdm_k64f
         - tools/records/mbed/freescale_ksdk.yaml
         - tools/records/mbed/k64f_cmsis.yaml
@@ -30,22 +29,26 @@ projects:
     lpc1768_blinky:
         - *module_lpc1768
         - *module_mbed
-        - *proj_settings
+        - *mbed_toolchain_settings
         - tools/records/projects/lpc1768_blinky.yaml
     frdm_k64f_blinky:
         - *module_mbed
         - *module_frdm_k64f
+        - *mbed_toolchain_settings
         - tools/records/projects/frdm_k64f_blinky.yaml
     frdm_k64f_blinky_lib:
         - *module_mbed_k64f_gcc_arm_lib
+        - *mbed_toolchain_settings
         - tools/records/projects/frdm_k64f_blinky.yaml
     frdm_k64f_rtos_basic_lib:
         - *module_mbed_k64f_gcc_arm_lib
         - *rtos_cortex_m4
+        - *mbed_toolchain_settings
         - tools/records/projects/frdm_k64f_rtos_basic.yaml
         - tools/records/mbed/frdm_k64f_target_settings.yaml
     disco_f407vg_blinky:
         - *module_mbed
+        - *mbed_toolchain_settings
         - tools/records/mbed/disco_f407vg_cmsis.yaml
         - tools/records/mbed/disco_f407vg_target.yaml
         - tools/records/projects/disco_f407vg_blinky.yaml
