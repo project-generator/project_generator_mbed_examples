@@ -26,7 +26,7 @@ common:
         - TARGET_NXP
         - __CORTEX_M3
         - __MBED__=1
-tool_specific:
+# tool_specific:
     # iar:
     #     misc:
     #         c_flags:
