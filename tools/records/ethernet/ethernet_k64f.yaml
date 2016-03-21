@@ -1,0 +1,7 @@
+common:
+  includes:
+    ethernet:
+      - mbed\libraries\net\eth\lwip-eth\arch\TARGET_Freescale
+  sources:
+    ethernet:
+      - mbed\libraries\net\eth\lwip-eth\arch\TARGET_Freescale

@@ -1,5 +1,6 @@
 common:
     includes:
+        lpc1768_cmsis:
         - mbed/libraries/mbed/targets/cmsis
         - mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X
     sources:
@@ -9,6 +10,7 @@ common:
 tool_specific:
     uvision:
         includes:
+            lpc1768_cmsis:
             - mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_ARM_STD
         sources:
             lpc1768_cmsis:

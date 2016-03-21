@@ -1,5 +1,6 @@
 common:
     includes:
+        freescale_ksdk:
         - mbed/libraries/mbed/targets/hal/TARGET_FREESCALE/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE
         - mbed/libraries/mbed/targets/hal/TARGET_FREESCALE/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/common/phyksz8081
         - mbed/libraries/mbed/targets/hal/TARGET_FREESCALE/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/clock

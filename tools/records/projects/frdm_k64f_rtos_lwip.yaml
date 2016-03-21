@@ -3,4 +3,4 @@ common:
         - frdm-k64f
     sources:
         example:
-        - examples/blinky/main.cpp
+        - examples/tcp_echo_server/tcp_echo_server.cpp

@@ -3,33 +3,62 @@ modules:
     mbed: &module_mbed
         - tools/records/mbed/common.yaml
     lpc1768: &module_lpc1768
-        - tools/records/mbed/lpc1768_cmsis.yaml
-        - tools/records/mbed/lpc1768_target.yaml
-    proj_settings: &proj_settings
-        - tools/records/mbed/proj_set.yaml
+        - tools/records/mbed/mbed_lpc1768/lpc1768_cmsis.yaml
+        - tools/records/mbed/mbed_lpc1768/lpc1768_target.yaml
+    mbed_toolchain_settings: &mbed_toolchain_settings
+        - tools/records/toolchains/toolchain.yaml
+    frdm_k64f: &module_frdm_k64f
+        - tools/records/mbed/freescale_ksdk.yaml
+        - tools/records/mbed/frdm_k64f/k64f_cmsis.yaml
+        - tools/records/mbed/frdm_k64f/k64f_target.yaml
+        - tools/records/mbed/frdm_k64f/frdm_k64f_target.yaml
+        - tools/records/mbed/frdm_k64f/frdm_k64f_target_settings.yaml
+    mbed_k64f_lib: &module_mbed_k64f_lib
+        - tools/records/mbed/frdm_k64f/mbed_k64f_lib.yaml
+        - tools/records/toolchains/toolchain.yaml
+    rtos_cortex_m4: &rtos_cortex_m4
+        - tools/records/rtos/rtos_cortex_m4.yaml
+        - tools/records/rtos/rtos_common.yaml
 
 projects:
     k20d50m_blinky:
         - *module_mbed
-        - tools/records/mbed/k20_cmsis.yaml
-        - tools/records/mbed/k20_target.yaml
+        - tools/records/mbed/frdm_k20d50m/k20_cmsis.yaml
+        - tools/records/mbed/frdm_k20d50m/k20_target.yaml
         - tools/records/projects/k20_blinky.yaml
     lpc1768_blinky:
         - *module_lpc1768
         - *module_mbed
-        - *proj_settings
+        - *mbed_toolchain_settings
         - tools/records/projects/lpc1768_blinky.yaml
     frdm_k64f_blinky:
         - *module_mbed
-        - tools/records/mbed/freescale_ksdk.yaml
-        - tools/records/mbed/k64f_cmsis.yaml
-        - tools/records/mbed/k64f_target.yaml
+        - *module_frdm_k64f
+        - *mbed_toolchain_settings
         - tools/records/projects/frdm_k64f_blinky.yaml
-        - tools/records/mbed/frdm_k64f_target.yaml
+    frdm_k64f_blinky_lib:
+        - *module_mbed_k64f_lib
+        - *mbed_toolchain_settings
+        - tools/records/projects/frdm_k64f_blinky.yaml
+    frdm_k64f_rtos_basic_lib:
+        - *module_mbed_k64f_lib
+        - *rtos_cortex_m4
+        - *mbed_toolchain_settings
+        - tools/records/projects/frdm_k64f_rtos_basic.yaml
+        - tools/records/mbed/frdm_k64f/frdm_k64f_target_settings.yaml
+    frdm_k64f_tcp_server_lib:
+        - *module_mbed_k64f_lib
+        - *rtos_cortex_m4
+        - *mbed_toolchain_settings
+        - tools/records/projects/frdm_k64f_rtos_basic.yaml
+        - tools/records/mbed/frdm_k64f/frdm_k64f_target_settings.yaml
+        - tools/records/ethernet/ethernet_common.yaml
+        - tools/records/ethernet/ethernet_k64f.yaml
     disco_f407vg_blinky:
         - *module_mbed
-        - tools/records/mbed/disco_f407vg_cmsis.yaml
-        - tools/records/mbed/disco_f407vg_target.yaml
+        - *mbed_toolchain_settings
+        - tools/records/mbed/disco_f407vg/disco_f407vg_cmsis.yaml
+        - tools/records/mbed/disco_f407vg/disco_f407vg_target.yaml
         - tools/records/projects/disco_f407vg_blinky.yaml
 
 # workspace showcase, where we can group multiple projects

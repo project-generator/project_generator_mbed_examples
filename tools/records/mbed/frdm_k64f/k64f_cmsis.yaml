@@ -1,5 +1,6 @@
 common:
     includes:
+        k64f_cmsis:
         - mbed/libraries/mbed/targets/cmsis
         - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_MCU_K64F
     sources:
@@ -9,6 +10,7 @@ common:
 tool_specific:
     uvision:
         includes:
+            k64f_cmsis:
             - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_MCU_K64F/TOOLCHAIN_ARM_STD
         sources:
             k64f_cmsis:
@@ -24,6 +26,7 @@ tool_specific:
             - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_MCU_K64F/TOOLCHAIN_GCC_ARM/MK64F12.ld
     iar:
         includes:
+            k64f_cmsis:
             - mbed/libraries/mbed/targets/cmsis/TARGET_FREESCALE/TARGET_MCU_K64F/TOOLCHAIN_IAR
         sources:
             k64f_cmsis:

@@ -1,0 +1,32 @@
+common:
+  includes:
+    ethernet:
+      - mbed\libraries\net\eth
+      - mbed\libraries\net\eth\EthernetInterface
+      - mbed\libraries\net\eth\lwip-eth
+      - mbed\libraries\net\eth\lwip-eth\arch
+    ethernet:
+      - mbed\libraries\net\lwip
+      - mbed\libraries\net\lwip\Socket
+      - mbed\libraries\net\lwip\lwip
+      - mbed\libraries\net\lwip\lwip-sys
+      - mbed\libraries\net\lwip\lwip-sys\arch
+      - mbed\libraries\net\lwip\lwip\include
+      - mbed\libraries\net\lwip\lwip\include\ipv4
+      - mbed\libraries\net\lwip\lwip\include\ipv4\lwip
+      - mbed\libraries\net\lwip\lwip\include\lwip
+      - mbed\libraries\net\lwip\lwip\include\netif
+      - mbed\libraries\net\lwip\lwip\netif
+      - mbed\libraries\net\lwip\lwip\netif\ppp
+  sources:
+    ethernet:
+    - mbed\libraries\net\eth\EthernetInterface
+    ethernet:
+    - mbed\libraries\net\lwip\Socket
+    - mbed\libraries\net\lwip\lwip-sys\arch
+    - mbed\libraries\net\lwip\lwip\api
+    - mbed\libraries\net\lwip\lwip\core
+    - mbed\libraries\net\lwip\lwip\core\ipv4
+    - mbed\libraries\net\lwip\lwip\core\snmp
+    - mbed\libraries\net\lwip\lwip\netif
+    - mbed\libraries\net\lwip\lwip\netif\ppp

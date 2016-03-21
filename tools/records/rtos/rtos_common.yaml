@@ -1,0 +1,7 @@
+common:
+  includes:
+    rtos:
+    - mbed\libraries\rtos\rtos
+  sources:
+    rtos:
+    - mbed\libraries\rtos\rtos

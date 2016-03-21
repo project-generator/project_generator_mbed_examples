@@ -6,3 +6,10 @@ common:
         k20_hal:
             - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX
             - mbed/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/TARGET_K20D50M/PeripheralPins.c
+    macros:
+        - TARGET_K20D50M
+        - TARGET_M4
+        - TARGET_Freescale
+        - __CORTEX_M4
+        - ARM_MATH_CM4
+        - __MBED__=1
