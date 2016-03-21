@@ -18,6 +18,7 @@ common:
     includes:
         - examples/blinky
     sources:
+        example:
         - examples/blinky/main.cpp
     macros:
         - TARGET_LPC1768

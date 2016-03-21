@@ -2,4 +2,5 @@ common:
     target:
         - frdm-k64f
     sources:
+        example:
         - examples/rtos_basic/rtos_basic.cpp

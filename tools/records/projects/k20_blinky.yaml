@@ -6,6 +6,7 @@ common:
     includes:
         - examples/blinky
     sources:
+        example:
         - examples/blinky/main.cpp
 # tool_specific:
 #     uvision:
