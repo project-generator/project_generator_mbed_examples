@@ -1,6 +1,3 @@
-[submodule "tools/project_generator"]
-	path = tools/project_generator
-	url = git@github.com:0xc0170/project_generator.git
 [submodule "mbed"]
 	path = mbed
 	url = git@github.com:mbedmicro/mbed.git
