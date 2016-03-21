@@ -5,7 +5,7 @@ common:
       - mbed\libraries\net\eth\EthernetInterface
       - mbed\libraries\net\eth\lwip-eth
       - mbed\libraries\net\eth\lwip-eth\arch
-    lwip:
+    ethernet:
       - mbed\libraries\net\lwip
       - mbed\libraries\net\lwip\Socket
       - mbed\libraries\net\lwip\lwip
@@ -19,9 +19,9 @@ common:
       - mbed\libraries\net\lwip\lwip\netif
       - mbed\libraries\net\lwip\lwip\netif\ppp
   sources:
-    eth:
+    ethernet:
     - mbed\libraries\net\eth\EthernetInterface
-    lwip:
+    ethernet:
     - mbed\libraries\net\lwip\Socket
     - mbed\libraries\net\lwip\lwip-sys\arch
     - mbed\libraries\net\lwip\lwip\api
