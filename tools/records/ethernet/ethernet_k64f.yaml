@@ -1,0 +1,7 @@
+common:
+  includes:
+    lwip_k64f:
+      - mbed\libraries\net\eth\lwip-eth\arch\TARGET_Freescale
+  sources:
+    lwip_k64f:
+      - mbed\libraries\net\eth\lwip-eth\arch\TARGET_Freescale
